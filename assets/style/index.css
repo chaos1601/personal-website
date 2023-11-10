@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+:root {
+    --app-dark-bg: #181818;
+    --app-colorful-bg: #fd5c5c;
+    --app-button-bg: #28fa59;
+    --app-white: #fff;
+    --app-grey: #6b6b6b;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+}
+
+body {
+    background-color: var(--app-colorful-bg);
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
