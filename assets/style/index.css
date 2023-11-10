@@ -14,10 +14,11 @@
     --app-dark-bg: #181818;
     --app-grey-bg: #9b9a9a;
     --app-light-grey-bg: #c9c9c9;
-    --app-red-bg: #ff0c0c;
+    --app-red-bg: #bf0505;
     --app-white: #fff;
     --app-white-font: #fff;
-    --app-light-blue-font: #00d2da;
+    --app-light-blue-font: #04f7ff;
+    --app-dark-blue-font: #06b9bf;
     --app-grey: #6b6b6b;
     --app-red: #ff3c57;
     --app-green: #33ab4e;
@@ -161,6 +162,10 @@ body {
     font-weight: 400;
     line-height: 1.4;
     overflow: scroll;
+}
+
+a {
+    color: var(--app-dark-blue-font);
 }
 
 .about h2 {
