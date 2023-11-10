@@ -116,7 +116,11 @@ body {
 
 .about p {
     width: 50%;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.contact p {
+    font-size: 18px;
 }
 
 img {
