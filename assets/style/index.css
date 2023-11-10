@@ -12,9 +12,8 @@
 
 :root {
     --app-dark-bg: #181818;
-    --app-colorful-bg: #fd5c5c;
-    --app-button-bg: #28fa59;
     --app-white: #fff;
+    --app-white-font: #fff;
     --app-grey: #6b6b6b;
     --app-red: #ff3c57;
     --app-green: #33ab4e;
@@ -23,11 +22,99 @@
     --app-blue: #3c57ff;
 }
 
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+main {
+  height: calc(100dvh - 80px - 80px);
+}
+
+.flexbox {
+  display: flex;
+}
+
+header {
+  background-color: transparent;
+  height: 60px;
+  overflow: hidden;
+}
+
+header div {
+  width: 40%;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--app-white-font);
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+nav {
+  width: 60%;
+  text-align: right;
+}
+
+nav ul {
+  font-size: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 60px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 16px;
+  color: var(--app-white);
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: var(--app-red);
+  color: var(--app-white-font);
+}
+
+nav ul li + li {
+  margin-left: 20px;
+}
+
 body {
-    background-color: var(--app-colorful-bg);
+    background-color: var(--app-dark-bg);
+    overflow: hidden;
+    height: 1000px;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-weight: 400;
+    line-height: 1.4;
+    overflow: scroll;
+}
+
+.footer {
+    margin-top: 100px;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    color: var(--app-white-font);
+    background-color: var(--app-dark-bg);
+}
+
+i {
+    margin: 15px auto auto 20px;
+    padding-top: 20px;
+}
+
+h3 p {
+    text-align: end;
+    margin-right: 20px;
+    font-size: 14px;
 }
